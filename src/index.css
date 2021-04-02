@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: rgb(110, 211, 207);
+}
+
+.mobileCollapse {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border: 1px rgb(45, 45, 64) solid;
+  padding: 0;
+}
+
+/* img[src$=".png"] {
+  background-color: rgb(201, 41, 41, 1);
+
+} */
+
+a {
+  color: rgb(110, 211, 207);
+}
+
+a:hover{
+  color: rgb(73, 138, 136);
+  text-decoration: none;
+}
+
+/* a:active {
+  background-color: rgb(110, 211, 207);
+  border: rgba(159, 173, 159, 0.938) 1px solid;
+  border-radius: 3px;
+} */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.page-header1 {
+  margin: 30px;
+  text-align: center;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.slide-in-left-enter {
+  transform: translateX(-100%);
+}
+
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1000ms;
+}
+
+.slide-in-left-exit {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(110, 211, 207);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(110, 211, 207);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(110, 211, 207);
+}
+
+.defButton {
+  border: 2px #4d5256 solid;
+  color: #4d5256;
+  background-color: rgb(110, 211, 207);
+  padding: 5px;
+  margin: 2px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.listBlock {
+  padding: 15px;
+  width: 90%;
+  border: #4d5256 2px solid;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.listBlock > img, .kZbKYk {
+  width: 80%;
+}
+
+@media (min-width: 800px){
+  .mobileCollapse {
+      flex-direction: row;
+  }
+  .hideDesktop {
+    display: none;
+  }
+  .listBlock {
+    width: 50%;
+  }
+  .listBlock > img, .kZbKYk {
+    width: 250px;
+  }
+}

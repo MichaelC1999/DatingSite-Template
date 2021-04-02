@@ -1,0 +1,15 @@
+
+
+.avImgMessages {
+    width: 100%;
+
+}
+
+
+@media (min-width: 700px){
+    
+
+    .avImgMessages {
+        width: 150px;
+    }
+}

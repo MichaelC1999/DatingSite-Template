@@ -1,0 +1,54 @@
+.ReactCrop__image {
+    max-width: 100%;
+}
+
+.authForm {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.authForm > div > label:not(.defButton) {
+    text-align: left;
+    font-size: 20px;
+}
+
+.auth > button {
+    display: block;
+}
+
+.authForm > input, .authForm > button, .authForm > div {
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    width: 90%;
+    padding: 5px 2px;
+    
+}
+
+.authForm > input:focus{
+    color: rgb(110, 211, 207);
+    background-color: white;
+}
+
+.Auth {
+    text-align: center;
+    margin-top: 40px;
+}
+
+form {
+    text-align: center;
+    display: inline-block;
+}
+
+@media (min-width: 900px) {
+    .authForm {
+        width: 80%;
+    }
+    .authForm > input, .authForm > button, .authForm > div {
+        width: 50%;
+        padding: 10px 5px;
+    }
+}

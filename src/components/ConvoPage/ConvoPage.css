@@ -1,0 +1,37 @@
+/* hide overflow on mobile, hide overflow normally, on hover over flow is scroll */
+
+#convoBox {
+    overflow: scroll;
+}
+
+#convoAvImg {
+    width: 50vw;
+}
+
+#sendMsg {
+    width: 100%;
+}
+
+
+
+@media (min-width: 700px) {
+    #convoBox {
+        overflow: hidden;
+        padding-right: 17px;
+    }
+    
+    #convoBox:hover {
+        overflow-y: scroll;
+        padding-right: 0;
+
+    }
+
+    #convoAvImg {
+        width: 150px;
+    }
+
+    #sendMsg {
+        width: 50%;
+    }
+}
+

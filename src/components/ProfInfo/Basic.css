@@ -1,0 +1,77 @@
+.topSelect, .topRadio {
+    flex: 1;
+    flex-direction: column;
+    margin: 20px 60px;    
+}
+
+.topBoxes {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.topSelect > * {
+    display: block;
+    height: 30px;
+    width: 100%;
+    border: 1px rgb(45, 45, 64) solid;
+}
+
+.topRadio {
+    display: flex;
+    border: 1px rgb(45, 45, 64) solid;
+    padding: 20px;
+}
+
+.topRadio > .input, .topRadio > h5 {
+    /* display: inline;
+    max-width: 30px; */
+    flex-direction: column;
+    flex: 1;
+}
+
+.input {
+    display: flex;
+    padding: 5px;
+    width: 0;
+    border-radius: 50%;
+    border: 1px rgb(45, 45, 64) solid;
+    margin: 0;
+}
+
+.listInputs {
+    width: 100%;
+    padding: 0px !important;
+}
+
+.listInputs > * {
+    width: 50%;
+}
+
+input[type="radio"] {
+    margin-top: 0 !important;
+}
+
+.test {
+    display: inline-flex;
+}
+
+.test > * {
+    flex-direction: column;
+    flex: 1;
+    width: 10px;
+    text-align: left;
+    margin: 0;
+}
+
+@media (min-width: 800px) {
+    .topBoxes {
+        flex-direction: row;
+    }
+
+    .topSelect > * {
+        height: 20%;
+    }
+}

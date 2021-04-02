@@ -1,0 +1,140 @@
+
+.mobile-nav {
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+
+.nav-link { 
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    width: 10px;
+    text-decoration: none;
+    padding: 9px 12px;
+
+}
+
+li > .active {
+    text-decoration: none;
+}
+
+.nav-link:visited{
+    color: white;
+    background-color:rgb(110, 211, 207);
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link-unread {
+    color: white ;
+    background-color: rgb(85, 85, 97);
+    border: 1px rgba(159, 173, 159, 0.938) solid;
+    padding: 8px 11px;
+    text-decoration: none;
+    border-radius: 9%;
+}
+
+.navbar-name:hover, .navbar-name:active{
+    text-decoration: none;
+}
+
+.container-fluid {
+    align-items: center;
+}
+
+.nav-list {
+    height: 100%;
+    align-items: center;
+    display: none;
+    margin-right: 25px;
+}
+
+
+.mobile-nav > * {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-btn {
+    display: inline;
+    margin: 2px 15px;
+
+    padding: 6px;
+}
+
+.navbar-nav {
+    display: none;
+}
+
+.navbar-brand, .navbar-name {
+    color: white;
+    font-size: 24px;
+    margin: 0 7px;
+    padding: 15px 4px;
+}
+
+.navbar {
+    background-color: rgb(45, 45, 64);
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+header {
+    padding-bottom: 8px;
+    position: fixed;
+    width: 100%;
+    z-index: 400;
+}
+
+ul {
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.logo-head {
+    border: 0;
+    margin-right: 0;
+}
+
+@media (min-width: 800px) and (max-width: 1050px){
+    .nav-link { 
+        font-size: 15px;
+        margin: 0;
+    }
+    
+    .nav-list {
+        margin-right: 0;
+    }
+}
+
+
+@media (min-width: 800px){
+    .menu-btn {
+        display: none;
+    }
+
+    .logo-head {
+        margin-right: 15px;
+    }
+
+    .mobile-nav {
+        width: 12%;
+    }
+
+    .navbar-nav {
+        display: table;
+    }
+
+    .nav-list {
+        display: block;
+    }
+    .nav-list > ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+
+}
