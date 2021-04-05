@@ -190,7 +190,7 @@ class UserPage extends React.Component {
             if(this.state.user.values.modTrad >= 0 && this.state.user.values.homeAdv >= 0 && this.state.user.values.intrExtr >= 0 && this.state.user.values.indiffActive >= 0 && this.state.user.values.athRelig >= 0){
                 values = <div >
                     <div style={{display: "flex", flexDirection: "row", margin: "6px"}}>
-                        <h5 style={{flex: 1, textAlign: "left", margin: "auto"}} className="half valLabels">Modern - Trad </h5><div className="half valBarContainer">{modTradBar}</div>
+                        <h5 style={{flex: 1, textAlign: "left", margin: "auto"}} className="half valLabels">Modern - Traditional </h5><div className="half valBarContainer">{modTradBar}</div>
                     </div>
                     <div style={{display: "flex", flexDirection: "row", margin: "6px"}}>
                         <h5 style={{flex: 1, textAlign: "left", margin: "auto"}} className="half valLabels" >Home - Adventure </h5><div className="half valBarContainer">{homeAdvBar}</div>

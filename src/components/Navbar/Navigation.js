@@ -31,7 +31,7 @@ class Navigation extends Component {
                         <div className="navbar-header mobile-nav">
                             <button onClick={this.showDrawer} className="menu-btn">Menu</button>
                             {/* <img className="logo-head" alt="logo" src="" height="30"/> */}
-                            <a className="navbar-name" href="/">SocialSite</a>
+                            <a className="navbar-name" href="/">DatingSite</a>
                         </div>
                         <div className="nav-list">
                             <ul className="navbar-name">

@@ -1,7 +1,8 @@
 
 
 .userInfo > img {
-    width: 100%;
+    width: 65%;
+    margin: auto;
 }
 
 /* .userPage {

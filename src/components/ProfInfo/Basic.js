@@ -194,6 +194,9 @@ class Basic extends React.Component {
                 <select name="religiousDenom"  className="basicInfo"  onChange={this.changeValue.bind()} value={this.state.basicInfo.religiousDenom}>
                     <option value="">Religion?</option>
                     <option value="Catholic">Catholic</option>
+                    <option value="Muslim">Muslim</option>
+                    <option value="Jewish">Jewish</option>
+
                     <option value="Orthodox">Orthodox</option>
                     <option value="Protestant-Evangelical">Evangelical</option>
                     <option value="Protestant-Baptist">Baptist</option>
