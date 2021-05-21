@@ -177,7 +177,7 @@ class App extends Component {
             <Route path="/userList/:isMale" render={(props) => (<UserList {...props} updateMessages={this.updateMessages} />)} />
             <Route path="/user/:userId" render={(props) => (<UserPage {...props} updateMessages={this.updateMessages} />)} />
             
-            <Route path="/profileSettings" component={this.props.token ? ProfileSettings : UnAuth} />
+            <Route path="/profileSettings" render={this.props.token ? (props) => (<ProfileSettings {...props} updateMessages={this.updateMessages} />): (props) => <UnAuth {...props}/>} />
             <Route path="/conversations" exact component={this.props.token ? MessageBox : UnAuth} />
             <Route path="/conversations/:userId" exact component={this.props.token ? ConvoPage : UnAuth} />
           </Switch>
